@@ -6,4 +6,4 @@ Learning cpp with vscode.
 
 build: `Command + Shift + B`
 
-run: ./out/_target_
+debug: `Command + Shift + D`
