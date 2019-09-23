@@ -1,6 +1,4 @@
 {
-  // See https://go.microsoft.com/fwlink/?LinkId=733558
-  // for the documentation about the tasks.json format
   "version": "2.0.0",
   "tasks": [
     {
@@ -8,6 +6,7 @@
       "label": "clang++ build active file",
       "command": "/usr/bin/clang++",
       "args": [
+        "-g",
         "${file}",
         "-o",
         "${workspaceFolder}/out/${fileBasenameNoExtension}"
@@ -15,10 +14,25 @@
       "options": {
         "cwd": "/usr/bin"
       },
+      "group": "build",
+      "problemMatcher": ["$gcc"],
+      "presentation": {
+        "reveal": "silent",
+        "showReuseMessage": false
+      }
+    },
+    {
+      "type": "shell",
+      "label": "clang++ build and run active file",
+      "command": "${workspaceFolder}/out/${fileBasenameNoExtension}",
+      "dependsOn": ["clang++ build active file"],
       "problemMatcher": ["$gcc"],
       "group": {
         "kind": "build",
         "isDefault": true
+      },
+      "presentation": {
+        "showReuseMessage": false
       }
     }
   ]
