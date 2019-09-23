@@ -9,6 +9,6 @@ int main()
         ++val;
     }
     std::cout << "Sum of 1 to 1- inclusive is "
-        << sum << std::endl;
+              << sum << std::endl;
     return 0;
 }
