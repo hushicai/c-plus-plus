@@ -2,7 +2,7 @@
 
 Learning cpp with vscode.
 
-## vscode build and run
+## vscode shortcuts
 
 build: `Command + Shift + B`
 
