@@ -9,7 +9,9 @@
         "-g",
         "${file}",
         "-o",
-        "${workspaceFolder}/out/${fileBasenameNoExtension}"
+        "${workspaceFolder}/out/${fileBasenameNoExtension}",
+        "-I",
+        "${workspaceFolder}/include"
       ],
       "options": {
         "cwd": "/usr/bin"
