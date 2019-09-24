@@ -1,6 +1,6 @@
 # c-plus-plus
 
-Learning cpp with vscode.
+Learning **<<C++ Primer 5th>>** with vscode.
 
 ## vscode shortcuts
 
