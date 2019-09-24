@@ -25,3 +25,9 @@ std::cout << "The sum of " << v1
             << " and " << v2
             << " is " << v1 + v2 << std::endl;
 ```
+
+## [练习1.7](./1.7.cpp)
+
+> 编译一个包含不正确的嵌套注释的程序，观察编译器返回的错误信息。
+
+![exercise_1.7](../../images/exercise_1.7.png)
