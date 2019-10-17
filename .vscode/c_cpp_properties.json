@@ -1,7 +1,7 @@
 {
   "configurations": [
     {
-      "name": "cpp",
+      "name": "Mac",
       "includePath": ["${workspaceFolder}/**", "${workspaceFolder}/include"],
       "defines": [],
       "macFrameworkPath": [
