@@ -71,3 +71,8 @@ int *const curErr = &errNum;
 
 上述例子中，从右往左，离`curErr`最近的符号是`const`，这意味着`curErr`是一个常量对象，对象的类型由声明符的其余部分确定，声明符的下一个符号是`*`，说明`curErr`是一个常量指针，最后，该声明语句的基本数据类型部分确定了常量指针指向的是一个`int`对象。
 
+## 2.5 处理类型
+
+**decltype**
+
+`decltype((variable))`的结果永远是引用，而`decltype(variable)`结果只有当variable本身是一个引用时才是引用。
